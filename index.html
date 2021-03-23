@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width = device-width, initial-scale=1.0" name="viewport">
+    <title>Турагенство</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full&lazy=true"></script>
+</head>
+<body>
+<header>
+    <h1 class="header_text">Камышин - город на Волге</h1>
+    <div class="fon_header">
+        <img alt="kam" src="img/header.jpg">
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="main-top">
+            <div class="text-block">
+                <p class="text"> Город Камышин расположен в центральной части Волгоградской области, на правом берегу
+                    реки Волга (Волгоградского водохранилища), в устье реки Камышинка. Камышин - административный центр
+                    Камышинского района Волгоградской области. Удален от областного центра (г.Волгограда) на 199 км,
+                    расстояние до г.Саратова - 194 км.
+                </p>
+                <p>
+                    Общая площадь Камышина - 117 кв.км. Территориально город разделен на две части (новый и старый
+                    город) небольшой рекой Камышинка, впадающей в р.Волга.
+                    Год основания города - 1668.
+                    Город является крупным, третьим по величине городом области. Город Камышин представляет собой
+                    вытянутую застройку на правом берегу р.Волги. Город плотно застроен в центральной части и разрежен
+                    на окраинах. К окраинам примыкают дачные поселки и гаражные кооперативы. Центральные улицы города в
+                    основном прямые (ширина 10-20 м), покрыты асфальтом. В черте города имеются кварталы с постройками
+                    частного сектора, в большинстве одноэтажные, каменные (с подвалами).
+                </p>
+                <p>
+                    Камышин сегодня - это город на Волге с почти 3,5 вековой историей. Основанный в 1668 году по указу
+                    царя Алексея Михайловича на правом берегу Волги, он играл первоначально роль города-крепости для
+                    охраны водного торгового пути. Летом 1695 года, во время Азовского похода против турок, в Камышине
+                    побывал царь Петр Первый и через два года переименовал его в Дмитриевск в честь прибывшего из Казани
+                    и размещенного здесь стрелецкого Дмитриевского полка. В полку особо почитали и хранили походную
+                    икону святого великомученика Димитрия Солунского. Гарнизон крепости и посадские люди были первыми
+                    жителями городка. Второй раз Петр Первый посетил город в 1722 году, направляясь в Персидский поход.
+                    А прежнее название ему - Камышин - вернула в 1780 году императрица Екатерина II и учредила его герб,
+                    в описании которого значилось: «Трава камыш в белом поле, от которой город сей название получил». В
+                    следующем 1781 году Камышин стал центром уезда, в статусе которого просуществовал около полутора
+                    веков.
+                </p>
+            </div>
+            <div class="login">
+                <form action="admin.html" name="reg">
+                    <p>Вход в личный кабинет</p>
+                    <p><input name="login" placeholder="Введите Ваш логин" type="text"></p>
+                    <p><input name="password" placeholder="Введите Ваш пароль" type="password"></p>
+                    <button name="registration" onclick="LoginPass()">Вход</button>
+                </form>
+            </div>
+        </div>
+        <div class="main-middle">
+            <div class="maps" id="map"></div>
+            <div class="photo">
+                <div class="picture">
+                    <img alt="Фото города" id="photocity" src="img/zd.jpg">
+                </div>
+                <div class="photo-buttons">
+                    <button id="photo1">1</button>
+                    <button id="photo2">2</button>
+                    <button id="photo3">3</button>
+                </div>
+            </div>
+        </div>
+        <div class="middle_bottom">
+            <div class="video">
+                <iframe width="600" height="340" src="https://www.youtube.com/embed/HB4nYE414MU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="600" height="340" src="https://www.youtube.com/embed/Kyia17m298I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <i class="right">All right reserved &#169; 2020</i>
+    </div>
+</footer>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width = device-width, initial-scale=1.0" name="viewport">
+    <title>Турагенство</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full&lazy=true"></script>
+</head>
+<body>
+<header>
+    <h1 class="header_text">Камышин - город на Волге</h1>
+    <h2 class="header_admin">Панель администратора</h2>
+    <div class="fon_header_admin">
+        <img alt="kam" src="img/header.jpg">
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="main-top">
+            <div class="text-block">
+                <p id="login_info"></p>
+                <form class="title" name="AddInfo">
+                    <p><textarea name="add_info" placeholder="Введите Ваш текст здесь" type="text"></textarea></p>
+                </form>
+                <div class="info_buttons">
+                    <button class="add_title" onclick="addInfo()">Добавить текст на сайт</button>
+                    <button class="add_title" onclick="removeInfo()">Удалить текст</button>
+                </div>
+            </div>
+            <div class="login">
+                <form action="index.html" name="reg">
+                    <p>Вход в личный кабинет</p>
+                    <p><input name="login" placeholder="Введите Ваш логин" type="text"></p>
+                    <p><input name="password" placeholder="Введите Ваш пароль" type="password"></p>
+                    <button name="registration">Выход</button>
+                </form>
+            </div>
+        </div>
+        <div class="main-middle">
+            <div class="maps" id="map"></div>
+            <div class="photo">
+                <div class="picture">
+                    <img alt="Фото города" id="photocity" src="img/zd.jpg">
+                </div>
+                <div class="photo-buttons">
+                    <button id="clear">Очистить</button>
+                    <button id="photo1">1</button>
+                    <button id="photo2">2</button>
+                    <button id="photo3">3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
